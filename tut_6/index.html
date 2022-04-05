@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    C:\laragon\www/new_vue js/tut_6/index.html
+    
+    <h1>Hellow Vue js (Directive v-bind:, v-text:, v-html:
+        v-if=, v-else-if=, v-else= )</h1>
+    <div id="app">
+        <img v-bind:src="src" v-bind:alt="alt">
+        <img :src="Grayscalesrc" :alt="Grayscalesrcalt">
+        <a v-bind:href="googlelink" :target="target">Click Me</a>
+        <hr></hr>
+        <p v-text="mytext"></p>
+        <p v-html="myHtml" > </p>
+        <p>method: {{ checkusername() }}</p>
+        <hr>
+
+        <h1>Conditional Randering....</h1>
+        <!-- ##### Conditional Rendering ### -->
+        <p v-if="userage >= allowage">
+           => Good to go
+        </p>
+         <p v-else-if="checkusername()">
+          => My name is {{ username }}
+        </p>
+        <p v-else>
+            => this is else condisiotn
+        </p>
+
+        <!-- ###### v-show ######## -->
+        <h2> tut:9 Directive: v-show</h2>
+        <p v-show="username === 'ludffy' ">
+            show it
+        </p>
+         <p v-show="checkusername() == false ">
+            Dont show it
+        </p>
+        ------------------------------------------- <br>
+        ----------------------------------- 
+
+        <p v-show="ageMatchFunction()">
+            First: Age is match.....
+        </p>
+        <p v-show="!ageMatchFunction()">
+            First: age dose not match
+        </p>
+
+        <!-- ### Tutorial: 10 (v-for) ## -->
+        <hr> <b>v-for</b> </hr>
+        
+        <p v-for="(car, index) in cars">
+           {{ index }} : {{ car }}
+        </p>
+
+        <!-- <div v-for="(item, index) in items"></div>
+        <div v-for="(val, key) in object"></div> -->
+        <p v-for="(val, name, index) in namefor">
+            {{ index }} --- {{ name }} ----- {{ val }}
+        </p>
+
+        <h3>List for loop ..................</h3>
+        <!-- <p v-for="(car, index) in liforarray">
+            {{ index }} : {{ car }}
+         </p> -->
+        <ul>
+            <li v-for="(val, key) in liforarray" :key="key" > 
+                {{ key }} : {{ val }}
+            </li>
+        </ul>
+
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
