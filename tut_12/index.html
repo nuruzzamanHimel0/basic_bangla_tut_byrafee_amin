@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+  <style>
+          #box{
+                background: red;
+                width: 41%;
+                height: 300px;
+          }  
+        </style>
+<body>
+
+    <h1>Hellow Vue js (event)</h1>
+    <div id="app">
+       
+        <h2>{{ name }}</h2>
+
+       <button v-on:click.left="update('Nuruzzaman himel' , $event)" >Click Me</button>
+      
+       <div v-on:mousemove="getCoord" id="box">
+            mouse hover me
+       </div>
+       <p>x: {{ x }}</p>
+       <p>y: {{ y }}</p>
+
+
+       ............................ <br>
+       ............................. 
+
+       <form v-on:submit="submitForm" >
+           <input type="text">
+           <input type="submit" value="submit">
+       </form>
+       ....................... <br>
+    <form v-on:submit.prevent ="submitFormOne">
+        <input type="text">
+        <input type="submit" value="submit">
+    </form>
+
+    ................ <br>
+    <h3>@@@@@@@@  v-model= @@@@@@@@</h3>
+
+    <form v-on:submit.prevent="formSubmit" >
+
+        <label for="">First name:</label>
+        <input type="text" v-model="formData.firstname">
+        <br>
+
+        <label for="">First name:</label>
+        <input type="text" v-model="formData.lastname">
+        <br>
+        <input type="submit" value="submit">
+
+    </form>
+    <h2>Parent Form...............</h2>
+    <form   v-on:submit.prevent="parentFormSubmit">
+        <label for="">Father name:</label>
+        <input type="text" v-model="newFormModl.fatherName" >
+       
+        <br>
+        <label for="">Mother name:</label>
+        <input type="text" v-model="newFormModl.motherName" >
+       
+        <br>
+        <input type="submit" value="SUbmit">
+    </form>
+
+    <h2>Friends Form ............</h2>
+
+    <form v-on:submit="friendFOrmFunction">
+        <label for="">FIrst Friend name:</label>
+        <input type="text" v-model="friendNewForm.firstFrndName">
+        <br>
+        <label for="">Secound Friend name:</label>
+        <input type="text" v-model="friendNewForm.secFrndName">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+ 
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

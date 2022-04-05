@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1>Hellow Vue js (v-once)</h1>
+    <div id="app">
+       
+        <h2>{{ name }}</h2>
+
+        <h2 v-once>{{ name }}</h2>
+
+        {{ update() }}
+    </div>
+
+    <div id="app1">
+        <p v-once> {{ country }} </p>
+        <h3>{{ country }}</h3>
+        {{ countryMethod() }}
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

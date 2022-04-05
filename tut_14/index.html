@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+  <style>
+          #box{
+                background: red;
+                width: 41%;
+                height: 300px;
+          }  
+        </style>
+<body>
+
+    <h1>Hellow Vue js ( Computed property)</h1>
+    <div id="app">
+        
+     <button v-on:click="a++" >Butoon A</button>
+     <button v-on:click="b++">Butoon B</button>
+
+     <p>A = {{ a }}</p>
+     <p>B = {{ b }}</p>
+     <p>Salary = {{ salary }}</p>
+     <hr>
+     <hr>
+     <!-- this hidden code for methods.. -->
+     <!-- <p>Salary + A = {{ sumOfA() }} </p>
+     <p>Salary + B = {{ sumOfB() }} </p> -->
+
+     <!-- this code for computed property -->
+     <p>Salary + A = {{ sumOfA }} </p>
+     <p>Salary + B = {{ sumOfB }} </p>
+
+    </div>
+..................................... <br>
+....................................... 
+
+
+
+    
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
