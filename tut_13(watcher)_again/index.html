@@ -24,6 +24,11 @@
       <hr>
       <input type="text" v-model="gb">
       <input type="text" v-model="mb">
+      <hr><br>
+      <h2>{{ counter }}</h2>
+      <button @click.prevent="counter++" >Press Me</button>
+      <input type="text" v-model="someText">
+      <button @click.prevent="testMethod()" >TEST Me</button>
     </div>
 
 
@@ -41,7 +46,9 @@
           message:'',
           typeing:false,
           gb:null,
-          mb:null
+          mb:null,
+          counter:0,
+          someText:null
         },
         watch:{
           message(newValue, oldValue){
@@ -54,13 +61,27 @@
             },2000);
           },
           gb(value){
+            console.log('gb');
             this.mb = value * 1024;
           },
           mb(value){
+            console.log('mb');
             this.gb = value / 1024;
+          },
+          someText(){
+            this.counterIncrement();
           }
 
-        }
+        },
+        methods: {
+          async counterIncrement(){
+            console.log( this.counter);
+            this.counter ++;
+          },
+          testMethod(){
+            console.log('tes');
+          }
+        },
       });
 
     </script>
