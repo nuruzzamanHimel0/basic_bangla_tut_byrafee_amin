@@ -1,0 +1,55 @@
+ tut 4: instance and elemente
+tut 5 : methods
+tut:6,7,8: Direction ( v-bind: , v-text: . v-html:, conditional randering, 
+tut:9 : directive ( v-show )
+tut-10 v-for
+tut-11 v-once
+tut-11 event ( v-on:click="function" )
+tut - 12 ( Argument & Modifiers)
+tut- 13 (  v-model= form )
+tut: 14 ( computed proparty use instade of methods property )
+tut- 15 (  directive short hand )
+tut-16 (multiple instance create & one instance to another instance access)
+tut- 17 ( create more instance and access one instance to another instance )
+tut - 18 (  $mount() , remplate: property )
+tut-19 (  component )
+tut-20 ( vuejs lifecycle )
+tut-21 ( yarn install ,vuejs cli install, vue cli project create )
+tut-22 & 23(  local components and global components )
+tut- 24  ( how to user style in components --- scoped css in vuejs)
+tut-25 ( basic props in vuejs) (parent component assign child comp props data )
+tut-26 (done) (  props in child component  ---  child  componnt to parent  component data update ------- custom event vuejs)
+tut-27 (using component child component to child component data upass)
+tut-28 (slot)
+tut-29(bootstrap integration process)
+tut-30-34 (How to handel form in vuejs)
+
+tut-35 ( --------------- Dynamic components----------)
+
+tut-36, 37 (custom directive)
+datae: 31/7/21
+tut- 38 (vuejs transition)
+tut- 39 done -- 7/8/21(custom transation class)
+tut-40 ( Local and Global filter)
+tut-41 (mixin) using this we can ure re-useable data for all components
+
+tut-42,43 ( GET & POST )
+
+============== related start
+tut-44,45 (done) (vue ROUTE) title: 
+ vue js router diya google y serarch dite hbe: https://router.vuejs.org/installation.html
+ei url teke vue router include kore nite hbe
+
+tut-46,47( nested route , route name use , query string or query parameters use
+tut-48 ( active-class , exact , wrong url redirect home or 404 )
+tut-49 (scroll behavior form , to)
+tut-50(vue router nevigation guard)
+
+============== related end
+
+
+
+tut- 51 , 52 , 53 (vuex, vuex store)
+tut- 53(vuex getters)
+tut- 55,56  (vuex mutation , vuex actions)
+tut-56 ()
