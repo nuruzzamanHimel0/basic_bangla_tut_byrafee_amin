@@ -1,0 +1,3 @@
+here,  i do 
+1) parent component to child component communication and child to parent component communication
+2) secoundly i do child to child communication vida o parents
